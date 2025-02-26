@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            border: 2px black solid;
+        }
+        section{
+            display: flex;
+            border: 2px black solid;
+        }
+        section:nth-child(3){
+            display: flex;
+            flex-direction: column;
+        }
+        #image{
+            background-image: url("yoga1.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 3rem;
+            margin:1em;
+            color: white;
+            width: 30%;
+            height: 50vh;
+        }
+        #links ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog Pages</h1>
+    </header>
+    <section>
+        <div id="image"></div>
+        <div id="Info">
+            <h2>Aoulad Touhami Ismail</h2>
+            <h3>Ingénieur en Informatique et Réseaux</h3>
+            <div id="links">
+                <ul>
+                    <li><a href="https://www.google.com">Google</a></li>
+                    <li><a href="https://www.youtube.com">Youtube</a></li>
+                    <li><a href="https://www.unsplash.com">Unsplash</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="Articles">
+        <div id="articles">
+
+        </div>
+        <table border="1">
+
+        </table>
+    </section>
+    <section>
+        <iframe src="file:///C:/Users/ismai/OneDrive/Bureau/Ecole-IT/3WEB/Jour_1/landing_page.html" frameborder="0" style="width: 100%;"></iframe>
+    </section>
+</body>
+</html>
+
+<script>
+    
+    var articles = [
+        {
+            titre: "Google",
+            contenu: "Contenu de l'article 1", 
+            lien: [{
+                "name": "Google",
+                "url": "https://www.google.com"
+            }]
+        },
+        {
+            titre: "Article 2",
+            contenu: "Contenu de l'article 2",
+            lien: [{}]
+        },
+        {
+            titre: "Article 3",
+            contenu: "Contenu de l'article 3",
+            lien: [{}]
+        }
+    ];
+
+
+    var affichage = document.querySelector("#articles");
+    articles.forEach((x)=>{
+        (x.lien[0].url == undefined) ? articless.innerHTML += "<h3>"+x.titre+"</h3><p>"+x.contenu+"</p><p>Pas de lien</p>" : articless.innerHTML += "<h3>"+x.titre+"</h3><p>"+x.contenu+"</p><a href='"+x.lien[0].url+"' target=_blank>"+x.lien[0].name +"</a>";
+    })
+</script>
