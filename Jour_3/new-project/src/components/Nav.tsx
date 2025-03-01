@@ -1,10 +1,10 @@
-import { Grid2 as Grid} from "@mui/material";
+import { Grid2 as Grid, Typography} from "@mui/material";
 
 
 const Nav = () => {
     return (
         <Grid  mb={2} sx={{ bgcolor: "cyan", height:"100px"}} display={"flex"} justifyContent={"center"} alignItems={"center"}>
-            <h1>Nav</h1>
+             <Typography component={"h1"} variant="h4">Nav</Typography>
         </Grid>
     );
     };

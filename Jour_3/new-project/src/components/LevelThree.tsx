@@ -1,4 +1,4 @@
-import Article from "./article";
+import Article from "./Article";
 import Aside from "./Aside";
 import Footer from "./Footer";
 import Header from "./Header";

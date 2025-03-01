@@ -1,9 +1,9 @@
-import { Grid2 as Grid } from "@mui/material";
+import { Grid2 as Grid, Typography } from "@mui/material";
 
 const Aside = () => {
     return (
         <Grid  sx={{ bgcolor: "pink",height:"100%" }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
-            <h1>Aside</h1>
+             <Typography component={"h1"} variant="h4">Aside</Typography>
         </Grid>
     );
 };

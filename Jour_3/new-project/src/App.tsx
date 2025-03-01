@@ -1,3 +1,4 @@
+import { Divider } from '@mui/material'
 import './App.css'
 import LevelOne from './components/LevelOne'
 import LevelThree from './components/LevelThree'
@@ -8,9 +9,9 @@ function App() {
   return (
     <>
       <LevelOne />
-      <hr />
+      <Divider sx={{margin:1}}/>
       <LevelTwo />
-      <hr />
+      <Divider sx={{margin:1}}/>
       <LevelThree />
     </>
   )
